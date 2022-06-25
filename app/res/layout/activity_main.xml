@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <com.google.android.material.bottomnavigation.BottomNavigationView
+     android:id="@+id/bottom_navigation"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="#48B1DA"
+     app:itemIconTint="#D50D0D"
+     app:itemTextColor="#D50D0D"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:menu="@menu/menu" />
+
+ <FrameLayout
+     android:id="@+id/fragment_container"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+     app:layout_constraintTop_toTopOf="parent">
+
+ </FrameLayout>
+
+ <EditText
+     android:id="@+id/editText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="99dp"
+     android:layout_marginTop="143dp"
+     android:layout_marginEnd="102dp"
+     android:ems="10"
+     android:hint="Employee Name"
+     android:inputType="textPersonName"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintBottom_toTopOf="@+id/editText2"
+
+     />
+
+ <EditText
+     android:id="@+id/editText2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="99dp"
+     android:layout_marginTop="85dp"
+     android:layout_marginEnd="102dp"
+     android:ems="10"
+     android:hint="Number Of hours"
+     android:inputType="textPersonName"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/editText"
+     app:layout_constraintBottom_toTopOf="@+id/editText3"/>
+
+ <EditText
+     android:id="@+id/editText3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="100dp"
+     android:layout_marginTop="85dp"
+     android:layout_marginEnd="101dp"
+     android:ems="10"
+     android:hint="Employee Salary"
+     android:inputType="textPersonName"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/editText2"
+     app:layout_constraintBottom_toTopOf="@+id/button1"
+     />
+
+ <Button
+     android:id="@+id/button1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="158dp"
+     android:layout_marginEnd="165dp"
+     android:text="Insert"
+     android:layout_marginTop="60dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintBottom_toTopOf="@+id/button2"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+ <Button
+     android:id="@+id/button2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Search"
+     android:layout_marginTop="30dp"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

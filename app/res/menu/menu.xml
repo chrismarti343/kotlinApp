@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_baseline"
+        android:icon="@drawable/ic_baseline"
+        android:title="See all"/>
+
+    <item
+        android:id="@+id/ic_baseline_present"
+        android:icon="@drawable/ic_baseline_present"
+        android:title="Insert"/>
+
+</menu>
